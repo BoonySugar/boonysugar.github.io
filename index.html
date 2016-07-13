@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="jquery.localScroll.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		$(document).ready (function(){
+			$(".nav").localScroll({
+				duration: 800
+			});
+			$( "li" ).addClass(function(navitem) {
+  				var addedClass;
+ 
+				  if ( currentClass === "navitem" ) {
+   				 addedClass = ".scrolledto";
+  			}
+ 
+  return addedClass;
+});
+		})
+	</script>
+	<title>Aether</title>
+</head>
+<body>
+	<div class="site">
+	<div class="pic">
+		<div class="navbar">
+		<ul class="nav">
+			<li class="navitem"><a name="about" href="#about">Who We Are</a></li>
+			<li class="navitem spacing"><a name="about" href="#job">What We Do</a></li>
+			<li class="navitem spacing"><a name="about" href="#education">Education</a></li>
+			<li class="navitem spacing"><a name="about" href="#gallery">Gallery and Portfolio</a></li>
+			<li class="navitem spacing"><a name="about" href="#contact">Contact</a></li>
+		</ul>	
+		</div>
+		<div class="top">
+			<p class="intro">Aether</p>
+			<br>
+			<p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;Design</p>
+		</div>
+	</div>
+		<div class="page" id="about">	
+			<h1 class="heading">Who We Are</h1>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis bibendum ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae tortor eget sapien finibus sagittis. Proin ac egestas leo. Duis quis nunc id ante egestas dapibus at sed ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tellus justo, auctor facilisis congue quis, ultricies a orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In aliquam sodales ullamcorper. Suspendisse semper, mi ac condimentum faucibus, ante magna ultrices quam, sit amet pretium magna erat a est. Vestibulum accumsan nunc sapien, sit amet fringilla elit aliquet at. Vivamus posuere arcu nec eros scelerisque hendrerit. Duis convallis imperdiet gravida. Nullam sed diam finibus, vestibulum tortor sit amet, faucibus velit. ben is awesome. hi andre
+			</p>
+		</div>
+		<div class="page" id="job">
+			<h1 class="heading">What We Do</h1>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum nulla, dictum in diam eu, egestas consequat felis. Curabitur tempus rutrum sapien at congue. Nunc malesuada interdum ipsum, et lobortis tortor suscipit non. Quisque consequat sodales risus, eu porta purus tempor ut. Aliquam id lectus congue, rhoncus nulla vel, ultricies metus. Vestibulum in bibendum tortor. Suspendisse fermentum laoreet blandit. Nulla pharetra risus in malesuada tristique. Morbi eu semper orci, et viverra justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum lectus vestibulum risus fringilla lobortis. Pellentesque vitae orci imperdiet, molestie nibh a, gravida turpis. Etiam venenatis rhoncus est, nec sagittis massa pulvinar nec. Vivamus sit amet porta augue.
+			</p>
+		</div>
+		<div class="page" id="education">
+			<h1 class="heading">Education</h1>
+			<p class="text">Morbi non turpis dignissim, aliquet mauris ut, viverra neque. Nunc ultricies hendrerit condimentum. Nulla non urna et felis facilisis fringilla et in ex. Curabitur ut diam nulla. Vivamus dictum rhoncus nunc, at rutrum felis vestibulum non. Suspendisse maximus massa orci, vel tempor odio dictum a. Pellentesque a diam pretium, interdum justo nec, finibus leo.Morbi non turpis dignissim, aliquet mauris ut, viverra neque. Nunc ultricies hendrerit condimentum. Nulla non urna et felis facilisis fringilla et in ex. Curabitur ut diam nulla. Vivamus dictum rhoncus nunc, at rutrum felis vestibulum non. Suspendisse maximus massa orci, vel tempor odio dictum a. Pellentesque a diam pretium, interdum justo nec, finibus
+			</p>
+		</div>
+		<div class="page" id="gallery">
+			<h1 class="heading">Gallery and Portfolio</h1>
+			<p class="text">Praesent varius est vel neque malesuada, quis aliquet orci finibus. Fusce erat felis, dictum eget mi nec, laoreet luctus dui. Nulla et mattis lorem, eget vehicula mauris. Maecenas quam massa, volutpat sit amet venenatis ac, laoreet nec eros. Fusce a dolor fermentum, pulvinar enim quis, porttitor dolor. Proin vestibulum iaculis lectus, vel pellentesque libero viverra varius. Nullam rutrum, nulla ut consectetur consequat, odio risus rutrum sem, eu egestas turpis risus ac orci. Aliquam ac elit a diam volutpat fringilla eget ut urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis in rhoncus nisl. Donec in quam id est luctus rutrum. Donec at magna et nibh pretium mattis.
+			</p>
+		</div>
+		<div class="page contact" id="contact">
+			<h1 class="heading">Contact</h1>
+			<p class="text">Morbi non turpis dignissim, aliquet mauris ut, viverra neque. Nunc ultricies hendrerit condimentum. Nulla non urna et felis facilisis fringilla et in ex. Curabitur ut diam nulla. Vivamus dictum rhoncus nunc, at rutrum felis vestibulum non. Suspendisse maximus massa orci, vel tempor odio dictum a. Pellentesque a diam pretium, interdum justo nec, finibus leo.Morbi non turpis dignissim, aliquet mauris ut, viverra neque. Nunc ultricies hendrerit condimentum. Nulla non urna et felis facilisis fringilla et in ex. Curabitur ut diam nulla. Vivamus dictum rhoncus nunc, at rutrum felis vestibulum non. Suspendisse maximus massa orci, vel tempor odio dictum a. Pellentesque a diam pretium, interdum justo nec, finibus
+			</p>
+		</div>
+	</div>
+</body>
+</html>
