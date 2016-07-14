@@ -106,5 +106,16 @@ a {
 	margin-bottom: 40px;
 	padding: 30px;
 }
-\
-#magic-line { position: absolute; bottom: -2px; left: 0; width: 100px; height: 2px; background: #fe4902; }
+
+.image {
+	height: 360px;
+	width: 480px;
+	display: inline-block;
+	margin: 50px;
+}
+
+#gallery {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: auto;
+}
