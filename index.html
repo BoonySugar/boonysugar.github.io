@@ -10,16 +10,25 @@
 			$(".nav").localScroll({
 				duration: 800
 			});
-			$( "li" ).addClass(function(navitem) {
-  				var addedClass;
- 
-				  if ( currentClass === "navitem" ) {
-   				 addedClass = ".scrolledto";
-  			}
- 
-  return addedClass;
-});
-		})
+			
+			$navHeight = $(".nav").height()
+			$(window).scroll(function(){
+				$top = $(window).scrollTop()
+				
+				$('.page').each(function(index, element) {
+					if ($top + $navHeight > $(this).offset().top && $top + $navHeight <= $(this).offset().top + $(this).height() ) {
+
+							var id = $(this).attr('id');
+            				$('a[href="#'+id+'"]').parent('li').addClass('scrolledto');
+						}
+						else {
+							var id = $(this).attr('id');
+            				$('a[href="#'+id+'"]').parent('li').removeClass('scrolledto');
+						}
+				})
+			});
+			
+		});
 	</script>
 	<title>Aether</title>
 </head>

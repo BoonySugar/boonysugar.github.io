@@ -21,7 +21,10 @@ a {
 
 .scrolledto {
 	text-decoration: underline;
+	opacity: 1;
+	
 }
+
 
 .site, body {
 	width: 100vw;
@@ -103,3 +106,5 @@ a {
 	margin-bottom: 40px;
 	padding: 30px;
 }
+\
+#magic-line { position: absolute; bottom: -2px; left: 0; width: 100px; height: 2px; background: #fe4902; }
